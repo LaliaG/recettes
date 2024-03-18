@@ -64,6 +64,6 @@ const styles = StyleSheet.create({
 //  toujours ajuster la structure de votre projet à mesure qu'il évolue et que de nouveaux besoins se font
 //   sentir. La flexibilité est la clé !
 
-User
+
   
 
