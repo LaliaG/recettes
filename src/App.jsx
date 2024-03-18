@@ -17,15 +17,15 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Home'>
-        <Stack.Screen name="Home/All Categories" component={HomeScreen} options={{ headerShown : false, title: 'All Categories' }} />
-        <Stack.Screen name='MealsOverView' component={CategoryMealsScreen} options={({ route })  => ({ title: route.params.mealsInCategoTitle })} />
-        <Stack.Screen name="About the Meal" component={MealDetailScreen} options={({ route })   => ({ title: route.params.mealTitle })} />
+        <Stack.Screen name="HomeScreen" component={HomeScreen} options={{ title: "All Categories" }} />
+        <Stack.Screen name="CategoryMealsScreen" component={CategoryMealsScreen} options={{ title: "MealsOverView"}} />
+        <Stack.Screen name="MealDetailScreen" component={MealDetailScreen} options={{ title: "About the Meal" }} />
       </Stack.Navigator>  
     </NavigationContainer>
   )
 }
 
-const styles = StyleSheet.create({})
+// const styles = StyleSheet.create({})
 
 
 

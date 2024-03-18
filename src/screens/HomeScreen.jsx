@@ -9,17 +9,21 @@ export default function HomeScreen ({ navigation }) {
       style={styles.categoryItem}
       onPress={() => {
         // Navigation vers l'écran des recettes de cette catégorie
-        navigation.navigate('CategoryMealsScreen', { categoryId: item.id })}}
+        navigation.navigate('CategoryMealsScreen', { categoryId: item.id });
+      }}
     >
       <Text style={styles.categoryTitle}>{item.title}</Text>
     </TouchableOpacity>
   );
+  
+   
+  
 
   return (
     <View style={styles.container}>
       <FlatList
         data={CATEGORIES}
-        renderItem={renderCategoryItem}
+        renderItem={renderCategoryItem} 
         keyExtractor={(item) => item.id}
         numColumns={2}
       />

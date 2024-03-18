@@ -1,9 +1,9 @@
 import React from 'react';
-import { View, Text, FlatList, Image } from 'react-native';
-import { MEALS } from './data'; 
+import { View, Text, FlatList, Image, StyleSheet } from 'react-native';
+import { MEALS } from '../data/data'; 
 
 
-export default function CategoryMealsScreen  ({ route })  {
+export default function CategoryMealsScreen  ({ navigation, route })  {
   const { categoryId } = route.params; // Obtenir l'ID de la catégorie sélectionnée
 
   // Filtrer les recettes par catégorie

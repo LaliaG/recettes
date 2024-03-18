@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
-import { MEALS } from './data'; // Importez vos recettes depuis le fichier data.js
+import { View, Text, Image, StyleSheet } from 'react-native';
+import { MEALS } from '../data/data'; // Importez vos recettes depuis le fichier data.js
 
 export default function MealDetailScreen  ({ route })  {
   const { mealId } = route.params; // Obtenir l'ID de la recette sélectionnée
@@ -25,6 +25,6 @@ export default function MealDetailScreen  ({ route })  {
   );
 };
 
-const styles = StyleSheet.create({});
+ const styles = StyleSheet.create({});
 
 
